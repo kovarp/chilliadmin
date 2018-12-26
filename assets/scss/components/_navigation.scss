@@ -1,0 +1,368 @@
+$nav-width: 240px;
+$nav-collapsed-width: 60px;
+$nav-background: white;
+
+.folded #adminmenu,
+.folded #adminmenu li.menu-top,
+.folded #adminmenuback,
+.folded #adminmenuwrap {
+	@media (min-width: 783px) {
+		width: $nav-collapsed-width;
+	}
+}
+
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+	background: transparent;
+	width: $nav-width;
+}
+
+#adminmenuback {
+	background: $nav-background;
+}
+
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
+	border-right-color: $gray-light;
+}
+
+#wpcontent,
+#wpfooter {
+	margin-left: $nav-width;
+}
+
+.folded #wpcontent,
+.folded #wpfooter {
+	@media (min-width: 783px) {
+		margin-left: $nav-collapsed-width;
+	}
+}
+
+.auto-fold #wpcontent,
+.auto-fold #wpfooter {
+	@media (max-width: 960px) and (min-width: 783px) {
+		margin-left: $nav-collapsed-width;
+	}
+}
+
+.auto-fold #adminmenu,
+.auto-fold #adminmenu li.menu-top,
+.auto-fold #adminmenuback,
+.auto-fold #adminmenuwrap {
+	@media (max-width: 960px) and (min-width: 783px) {
+		width: $nav-collapsed-width;
+	}
+}
+
+#adminmenu .wp-not-current-submenu .wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu {
+	@media (min-width: 783px) {
+		min-width: $nav-width;
+	}
+}
+
+#adminmenu .wp-submenu {
+	left: $nav-width;
+}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu .wp-menu-arrow,
+#adminmenu .wp-menu-arrow div,
+#adminmenu li.current a.menu-top,
+.folded #adminmenu li.current.menu-top,
+#adminmenu li.menu-top:hover,
+#adminmenu li.menu-top:hover > a,
+#adminmenu li.opensub>a.menu-top,
+#adminmenu li>a.menu-top:focus {
+	background-color: $primary;
+	color: $white;
+}
+
+#adminmenu li.menu-top>a:focus,
+#adminmenu li a:focus div.wp-menu-image:before,
+#adminmenu li.opensub div.wp-menu-image:before,
+#adminmenu li:hover div.wp-menu-image:before,
+#adminmenu li.menu-top:hover > a .wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu .wp-menu-image:before {
+	color: $white;
+}
+
+.folded #adminmenu li.wp-has-current-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
+.no-js li.wp-has-current-submenu:hover .wp-submenu,
+#adminmenu .wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu,
+.folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu {
+	background-color: $gray-light;
+	color: $body-color;
+}
+
+#adminmenu > li > a {
+	border-left: 4px solid transparent;
+}
+
+#adminmenu > li:hover > a,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+	border-left-color: $primary;
+}
+
+#adminmenu .wp-has-current-submenu ul>li>a,
+.folded #adminmenu li.menu-top .wp-submenu>li>a,
+#adminmenu .wp-submenu .wp-submenu-head {
+	padding-left: 22px;
+}
+
+#adminmenu .wp-submenu .wp-submenu-head {
+	padding-top: 16px;
+	font-weight: 500;
+}
+
+#adminmenu .wp-submenu a,
+#adminmenu a {
+	color: $body-color;
+}
+
+#adminmenu .opensub .wp-submenu li.current a,
+#adminmenu .wp-submenu li.current,
+#adminmenu .wp-submenu li.current a,
+#adminmenu .wp-submenu li.current a:focus,
+#adminmenu .wp-submenu li.current a:hover,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a,
+#adminmenu .wp-submenu a,
+#adminmenu .wp-submenu a:focus,
+#adminmenu .wp-submenu a:hover,
+#adminmenu .wp-submenu li.current a,
+#adminmenu a:hover {
+	color: $body-color;
+}
+
+#adminmenu .wp-not-current-submenu li>a:hover {
+	color: $primary;
+}
+
+#adminmenu a.menu-top {
+	font-size: 13px;
+}
+
+#adminmenuwrap .admin-menu-logo {
+	display: block;
+	height: 35px;
+	position: absolute;
+	top: -10px;
+	right: 0;
+	left: 0;
+
+	@media (max-width: 782px) {
+		top: 23px;
+	}
+
+	@media (max-width: 600px) {
+		top: 70px;
+	}
+}
+
+#adminmenuwrap:before {
+	content: '';
+	display: block;
+	margin: -12px auto 20px;
+	width: 162px;
+	height: 32px;
+	background-image: url('../img/chillicodes-logo.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@media (max-width: 782px) {
+		margin-top: 23px;
+		margin-bottom: 10px;
+	}
+
+	@media (max-width: 600px) {
+		margin-top: 70px;
+	}
+}
+
+.auto-fold #adminmenuwrap:before {
+	@media (max-width: 960px) and (min-width: 783px) {
+		width: 35px;
+		background-position: left center;
+		background-size: 105px 35px;
+	}
+}
+
+.folded #adminmenuwrap:before {
+	@media (min-width: 783px) {
+		width: 35px;
+		background-position: left center;
+		background-size: 105px 35px;
+	}
+}
+
+#adminmenu div.wp-menu-image {
+	width: 56px;
+	height: 44px;
+}
+
+#adminmenu div.wp-menu-name {
+	padding: 13px 0;
+}
+
+#adminmenu .wp-has-current-submenu ul>li>a,
+.folded #adminmenu li.menu-top .wp-submenu>li>a {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+#adminmenu div.wp-menu-image:before {
+	color: $gray-700;
+	font-size: 17px;
+	padding: 12px 0;
+	margin-top: 1px;
+}
+
+#adminmenu div.wp-menu-image.dashicons-dashboard:before {
+	margin-top: 2px;
+}
+
+#adminmenu .current div.wp-menu-image:before,
+#adminmenu .wp-has-current-submenu div.wp-menu-image:before,
+#adminmenu a.current:hover div.wp-menu-image:before,
+#adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+	color: $white;
+}
+
+#adminmenu .awaiting-mod,
+#adminmenu .update-plugins {
+	background-color: $primary;
+	color: $white;
+}
+
+#adminmenu li.wp-menu-separator {
+	height: 30px;
+}
+
+.auto-fold #adminmenu a.menu-top {
+	@media (max-width: 960px) {
+		height: 44px;
+	}
+}
+
+.folded #adminmenu a.menu-top {
+	@media (min-width: 783px) {
+		height: 44px;
+	}
+}
+
+.auto-fold #adminmenu div.wp-menu-image {
+	@media (max-width: 960px) and (min-width: 783px) {
+		width: 56px;
+		height: 44px;
+	}
+}
+
+.folded #adminmenu div.wp-menu-image {
+	@media (min-width: 783px) {
+		width: 56px;
+		height: 44px;
+	}
+}
+
+.auto-fold #adminmenu .opensub .wp-submenu,
+.auto-fold #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+.auto-fold #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
+.auto-fold #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+.auto-fold #adminmenu .wp-submenu.sub-open,
+.auto-fold #adminmenu a.menu-top:focus+.wp-submenu {
+	@media (max-width: 960px) and (min-width: 783px) {
+		left: $nav-collapsed-width
+	}
+}
+
+.folded #adminmenu .opensub .wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+.folded #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
+.folded #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+.folded #adminmenu .wp-submenu.sub-open,
+.folded #adminmenu a.menu-top:focus+.wp-submenu,
+.no-js.folded #adminmenu .wp-has-submenu:hover .wp-submenu {
+	@media (min-width: 783px) {
+		left: $nav-collapsed-width;
+	}
+}
+
+/* Collapse button */
+#collapse-menu {
+	border-top: 1px solid $border-color;
+}
+
+#collapse-button {
+	color: $body-color;
+}
+
+#collapse-button .collapse-button-icon:after {
+	padding: 4px 0;
+}
+
+#collapse-button .collapse-button-icon,
+#collapse-button .collapse-button-label {
+	line-height: 44px;
+}
+
+#collapse-button .collapse-button-icon {
+	width: 56px;
+	height: 44px;
+	color: $gray-700;
+}
+
+#collapse-button .collapse-button-label {
+	padding-left: 56px;
+}
+
+#collapse-button {
+	height: 44px;
+	border-left: 4px solid transparent;
+
+	&:hover {
+		background-color: $primary;
+		color: $white;
+		border-left-color: $primary;
+
+		.collapse-button-icon {
+			color: $white;
+		}
+	}
+}
+
+.auto-fold #adminmenu li a {
+	@media (max-width: 782px) {
+		font-size: 13px;
+	}
+}
+
+.auto-fold #adminmenu {
+	@media (max-width: 600px) {
+		top: auto;
+	}
+}
+
+#adminmenu li.menu-top > a:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#adminmenu #toplevel_page_all-in-one-seo-pack-aioseop_class .wp-menu-image {
+	background-position: 20px 14px !important;
+}
+
+#adminmenu #toplevel_page_all-in-one-seo-pack-aioseop_class:hover .wp-menu-image {
+	background-position: 20px -18px !important;
+}

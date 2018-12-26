@@ -1,0 +1,20 @@
+body {
+	background-color: $body-bg;
+	color: $body-color;
+	font-family: 'Poppins', sans-serif;
+}
+
+.wp-core-ui .button-link,
+a {
+	color: $primary;
+
+	&:hover {
+		color: darken($primary, 10%)
+	}
+}
+
+.wp-person a:focus .gravatar,
+a:focus,
+a:focus .media-icon img {
+	box-shadow: 0 0 3px rgba($primary, .8);
+}

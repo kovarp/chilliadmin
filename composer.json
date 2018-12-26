@@ -1,0 +1,24 @@
+{
+  "name": "kovarp/chilliadmin",
+  "description": "ChilliCodes admin style for WordPress backend",
+  "type": "wordpress-muplugin",
+  "license": [
+    "BSD-3-Clause"
+  ],
+  "authors": [
+    {
+      "name": "Pavel Kovář",
+      "email": "pavel@pavelkovar.cz",
+      "homepage": "https://www.pavelkovar.cz"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "johnpbloch/wordpress": "^4.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "kovarp\\ChilliAdmin\\": "src/"
+    }
+  }
+}

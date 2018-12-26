@@ -1,0 +1,141 @@
+.login #login_error,
+.login .message,
+.login .success {
+	border-left-color: $primary;
+}
+
+body.login {
+	font-size: 14px;
+}
+
+.login h1 a {
+	background-image: url('../img/chillicodes-logo.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 50px;
+}
+
+.login #login_error,
+.login .message {
+	border-left-color: $primary;
+	font-weight: 500;
+	padding-top: 14px;
+	border-radius: 2px;
+	text-align: center;
+}
+
+#login {
+	@media (min-width: 576px) {
+		width: 500px;
+	}
+}
+
+.login form {
+	border-radius: 3px;
+
+	@media (min-width: 576px) {
+		padding: 43px 50px;
+	}
+}
+
+.login label {
+	font-weight: 600;
+	font-size: 15px;
+	color: $body-color;
+}
+
+.login form .input,
+.login input[type=text] {
+	background-color: white;
+	box-shadow: none;
+	border-radius: 2px;
+	border: 2px solid $border-color;
+	font-size: 18px;
+	padding: 10px;
+	margin-top: 4px;
+	margin-bottom: 24px;
+
+	@media (min-width: 576px) {
+		padding: 12px;
+	}
+
+	&:focus {
+		border-color: darken($border-color, 10%);
+	}
+}
+
+.login #backtoblog,
+.login #nav {
+	text-align: center;
+}
+
+.login #backtoblog a,
+.login #nav a {
+	color: $primary;
+	font-size: 14px;
+	font-weight: 500;
+
+	&:hover {
+		color: darken($primary, 10%);
+		text-decoration: underline;
+	}
+}
+
+.login form .forgetmenot label {
+	font-size: 14px;
+}
+
+.login form .forgetmenot {
+	float: none;
+
+	@media (min-width: 576px) {
+		margin-top: 19px;
+		float: left;
+	}
+}
+
+.login .submit .button-primary {
+	@media (max-width: 575px) {
+		display: block;
+		width: 100%;
+		margin-top: 15px;
+		float: none;
+	}
+}
+
+.login #loginform {
+	input[type=radio],
+	input[type=checkbox] {
+		width: 30px;
+		height: 30px;
+
+		&:checked:before {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 10px;
+			margin-top: -2px;
+			margin-left: -1px;
+		}
+	}
+}
+
+.login .button-group.button-large .button,
+.login .button.button-large {
+	height: 45px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 1;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	@media (min-width: 576px) {
+		height: 50px;
+		font-size: 16px;
+		line-height: 50px;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}

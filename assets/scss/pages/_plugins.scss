@@ -1,0 +1,9 @@
+.plugin-update-tr.active td,
+.plugins .active th.check-column {
+	border-left-color: $primary;
+}
+
+.plugins .active td,
+.plugins .active th {
+	background-color: #fdf6f6;
+}

@@ -1,0 +1,9 @@
+.theme-browser .theme.add-new-theme a:focus:after,
+.theme-browser .theme.add-new-theme a:hover:after {
+	background-color: $primary;
+}
+
+.theme-browser .theme.add-new-theme a:focus span:after,
+.theme-browser .theme.add-new-theme a:hover span:after {
+	color: $primary;
+}

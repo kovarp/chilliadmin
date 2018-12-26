@@ -1,0 +1,19 @@
+// Core
+@import 'core/variables';
+@import 'core/fonts';
+@import 'core/type';
+
+// Components
+@import 'components/navigation';
+@import 'components/adminbar';
+@import 'components/boxes';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/editor';
+@import 'components/help';
+
+// Pages
+@import 'pages/dashboard';
+@import 'pages/login';
+@import 'pages/plugins';
+@import 'pages/themes';
