@@ -20,6 +20,7 @@
 	}
 }
 
+.components-button.is-primary,
 .wp-core-ui .button-primary,
 .wp-core-ui .button.button-primary.button-hero {
 	background-color: $primary;
@@ -54,4 +55,18 @@
 .wp-core-ui .button.focus,
 .wp-core-ui .button:focus {
 	box-shadow: 0 0 3px rgba($primary, .8);
+}
+
+.components-button.is-default:focus:enabled {
+	box-shadow: inset 0 -1px 0 #999, 0 0 0 2px $primary;
+}
+
+.components-button.is-tertiary,
+.components-button.is-link {
+	color: $primary;
+
+	&:not(:disabled):not([aria-disabled=true]):not(.is-default):hover,
+	&:hover {
+		color: rgba($primary, .8);
+	}
 }

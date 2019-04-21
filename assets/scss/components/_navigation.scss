@@ -366,3 +366,20 @@ $nav-background: white;
 #adminmenu #toplevel_page_all-in-one-seo-pack-aioseop_class:hover .wp-menu-image {
 	background-position: 20px -18px !important;
 }
+
+body.auto-fold .edit-post-layout__content {
+	@media (min-width: 782px) and (min-width: 960px) {
+		margin-left: $nav-width;
+	}
+}
+
+.auto-fold .components-notice-list,
+.auto-fold .edit-post-header {
+	@media (min-width: 782px) {
+		left: $nav-collapsed-width;
+	}
+
+	@media (min-width: 960px) {
+		left: $nav-width;
+	}
+}

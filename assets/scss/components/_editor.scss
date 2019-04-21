@@ -5,3 +5,165 @@
 .mce-menu .mce-menu-item:hover {
 	background-color: $primary !important;
 }
+
+.editor-block-list__insertion-point-inserter .editor-inserter__toggle {
+	color: $primary;
+}
+
+.editor-rich-text__tinymce a {
+	color: $primary;
+}
+
+.editor-block-list__layout .editor-block-list__block.is-hovered > .editor-block-list__block-edit:before {
+	outline: $primary;
+}
+
+.editor-block-list__breadcrumb .components-toolbar {
+	background-color: $primary;
+}
+
+.edit-post-sidebar__panel-tab.is-active {
+	border-bottom-color: $primary;
+}
+
+.components-modal__content .input-control:focus,
+.components-modal__content input[type=checkbox]:focus,
+.components-modal__content input[type=color]:focus,
+.components-modal__content input[type=date]:focus,
+.components-modal__content input[type=datetime-local]:focus,
+.components-modal__content input[type=datetime]:focus,
+.components-modal__content input[type=email]:focus,
+.components-modal__content input[type=month]:focus,
+.components-modal__content input[type=number]:focus,
+.components-modal__content input[type=password]:focus,
+.components-modal__content input[type=radio]:focus,
+.components-modal__content input[type=search]:focus,
+.components-modal__content input[type=tel]:focus,
+.components-modal__content input[type=text]:focus,
+.components-modal__content input[type=time]:focus,
+.components-modal__content input[type=url]:focus,
+.components-modal__content input[type=week]:focus,
+.components-modal__content select:focus,
+.components-modal__content textarea:focus,
+.components-popover .input-control:focus,
+.components-popover input[type=checkbox]:focus,
+.components-popover input[type=color]:focus,
+.components-popover input[type=date]:focus,
+.components-popover input[type=datetime-local]:focus,
+.components-popover input[type=datetime]:focus,
+.components-popover input[type=email]:focus,
+.components-popover input[type=month]:focus,
+.components-popover input[type=number]:focus,
+.components-popover input[type=password]:focus,
+.components-popover input[type=radio]:focus,
+.components-popover input[type=search]:focus,
+.components-popover input[type=tel]:focus,
+.components-popover input[type=text]:focus,
+.components-popover input[type=time]:focus,
+.components-popover input[type=url]:focus,
+.components-popover input[type=week]:focus,
+.components-popover select:focus,
+.components-popover textarea:focus,
+.edit-post-sidebar .input-control:focus,
+.edit-post-sidebar input[type=checkbox]:focus,
+.edit-post-sidebar input[type=color]:focus,
+.edit-post-sidebar input[type=date]:focus,
+.edit-post-sidebar input[type=datetime-local]:focus,
+.edit-post-sidebar input[type=datetime]:focus,
+.edit-post-sidebar input[type=email]:focus,
+.edit-post-sidebar input[type=month]:focus,
+.edit-post-sidebar input[type=number]:focus,
+.edit-post-sidebar input[type=password]:focus,
+.edit-post-sidebar input[type=radio]:focus,
+.edit-post-sidebar input[type=search]:focus,
+.edit-post-sidebar input[type=tel]:focus,
+.edit-post-sidebar input[type=text]:focus,
+.edit-post-sidebar input[type=time]:focus,
+.edit-post-sidebar input[type=url]:focus,
+.edit-post-sidebar input[type=week]:focus,
+.edit-post-sidebar select:focus,
+.edit-post-sidebar textarea:focus,
+.editor-block-list__block .input-control:focus,
+.editor-block-list__block input[type=checkbox]:focus,
+.editor-block-list__block input[type=color]:focus,
+.editor-block-list__block input[type=date]:focus,
+.editor-block-list__block input[type=datetime-local]:focus,
+.editor-block-list__block input[type=datetime]:focus,
+.editor-block-list__block input[type=email]:focus,
+.editor-block-list__block input[type=month]:focus,
+.editor-block-list__block input[type=number]:focus,
+.editor-block-list__block input[type=password]:focus,
+.editor-block-list__block input[type=radio]:focus,
+.editor-block-list__block input[type=search]:focus,
+.editor-block-list__block input[type=tel]:focus,
+.editor-block-list__block input[type=text]:focus,
+.editor-block-list__block input[type=time]:focus,
+.editor-block-list__block input[type=url]:focus,
+.editor-block-list__block input[type=week]:focus,
+.editor-block-list__block select:focus,
+.editor-block-list__block textarea:focus,
+.editor-post-permalink .input-control:focus,
+.editor-post-permalink input[type=checkbox]:focus,
+.editor-post-permalink input[type=color]:focus,
+.editor-post-permalink input[type=date]:focus,
+.editor-post-permalink input[type=datetime-local]:focus,
+.editor-post-permalink input[type=datetime]:focus,
+.editor-post-permalink input[type=email]:focus,
+.editor-post-permalink input[type=month]:focus,
+.editor-post-permalink input[type=number]:focus,
+.editor-post-permalink input[type=password]:focus,
+.editor-post-permalink input[type=radio]:focus,
+.editor-post-permalink input[type=search]:focus,
+.editor-post-permalink input[type=tel]:focus,
+.editor-post-permalink input[type=text]:focus,
+.editor-post-permalink input[type=time]:focus,
+.editor-post-permalink input[type=url]:focus,
+.editor-post-permalink input[type=week]:focus,
+.editor-post-permalink select:focus,
+.editor-post-permalink textarea:focus,
+.editor-post-publish-panel .input-control:focus,
+.editor-post-publish-panel input[type=checkbox]:focus,
+.editor-post-publish-panel input[type=color]:focus,
+.editor-post-publish-panel input[type=date]:focus,
+.editor-post-publish-panel input[type=datetime-local]:focus,
+.editor-post-publish-panel input[type=datetime]:focus,
+.editor-post-publish-panel input[type=email]:focus,
+.editor-post-publish-panel input[type=month]:focus,
+.editor-post-publish-panel input[type=number]:focus,
+.editor-post-publish-panel input[type=password]:focus,
+.editor-post-publish-panel input[type=radio]:focus,
+.editor-post-publish-panel input[type=search]:focus,
+.editor-post-publish-panel input[type=tel]:focus,
+.editor-post-publish-panel input[type=text]:focus,
+.editor-post-publish-panel input[type=time]:focus,
+.editor-post-publish-panel input[type=url]:focus,
+.editor-post-publish-panel input[type=week]:focus,
+.editor-post-publish-panel select:focus,
+.editor-post-publish-panel textarea:focus {
+	border-color: $primary;
+	box-shadow: 0 0 0 1px $primary;
+}
+
+.components-form-toggle.is-checked .components-form-toggle__track {
+	background-color: $primary;
+}
+
+.components-modal__content input[type=checkbox]:checked,
+.components-modal__content input[type=radio]:checked,
+.components-popover input[type=checkbox]:checked,
+.components-popover input[type=radio]:checked,
+.edit-post-sidebar input[type=checkbox]:checked,
+.edit-post-sidebar input[type=radio]:checked,
+.editor-block-list__block input[type=checkbox]:checked,
+.editor-block-list__block input[type=radio]:checked,
+.editor-post-permalink input[type=checkbox]:checked,
+.editor-post-permalink input[type=radio]:checked,
+.editor-post-publish-panel input[type=checkbox]:checked,
+.editor-post-publish-panel input[type=radio]:checked {
+	background-color: $primary;
+	border-color: $primary;
+}
+
+.editor-post-title__block:not(.is-focus-mode):not(.has-fixed-toolbar) .editor-post-title__input:hover {
+	border-color: $primary;
+}
