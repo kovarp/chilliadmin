@@ -102,6 +102,12 @@ $nav-background: white;
 	color: $body-color;
 }
 
+#adminmenu li::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
 #adminmenu > li > a {
 	border-left: 4px solid transparent;
 }
